@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documnet</title>
+    <link rel="stylesheet" href="./mean.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Mars space</div>
+    </header>
+
+    <main>
+        <div class="app-container">
+
+            <div class="controls">
+                <input type="text" id="searchInput" placeholder="Search">
+                <select id="sortSelect">
+                    <option value="asc">А-y</option>
+                    <option value="desc">y-А</option>
+                </select>
+                <button id="filterBtn">Search</button>
+            </div>
+
+            <div id="product-container" class="products-container"></div>
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Ma'lumotlaringizni kiriting</h2>
+            <form id="purchaseForm">
+                <input type="text" id="firstName" placeholder="Ismingiz" required>
+                <input type="text" id="lastName" placeholder="Familyangiz" required>
+                <input type="tel" id="phone" placeholder="Telefon raqamingiz" required>
+                <button type="submit">Yuborish</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./mean.js"></script>
+</body>
+
+</html>
